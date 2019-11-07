@@ -82,6 +82,12 @@
         settings:controller="com.android.settings.gestures.PowerMenuPreferenceController" />
 
     <Preference
+        android:key="three_finger_gesture_summary"
+        android:title="@string/three_finger_gesture"
+        android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings"
+        settings:controller="com.android.settings.gestures.SwipeToScreenshotPreferenceController" />
+
+    <Preference
         android:key="power_button_torch_summary"
         android:title="@string/power_button_torch_title"
         android:fragment="co.aospa.settings.gestures.PowerButtonTorchSettings"

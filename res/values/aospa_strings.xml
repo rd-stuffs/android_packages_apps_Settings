@@ -278,4 +278,8 @@
     <!-- Floating rotation button -->
     <string name="enable_floating_rotation_button_title">Floating rotation button</string>
 
+    <!-- Less boring heads up -->
+    <string name="less_boring_heads_up_title">Saner heads up</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for calls, messages, alarms, reminders and priority conversations</string>
+
 </resources>

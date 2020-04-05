@@ -141,4 +141,7 @@
     <string name="usb_default_config_title">USB</string>
     <string name="usb_default_config_summary">Choose the default behavior when connected to a device via USB</string>
 
+    <!-- Battery light -->
+    <string name="battery_light_title">Battery light</string>
+
 </resources>

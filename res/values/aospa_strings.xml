@@ -253,4 +253,7 @@
     <!-- Battery light -->
     <string name="battery_light_title">Battery light</string>
 
+    <!-- Max refresh rate -->
+    <string name="max_refresh_rate_title">Maximum refresh rate</string>
+
 </resources>

@@ -4,4 +4,7 @@
     <!-- Whether device supports increased touch sensitvity -->
     <bool name="config_supportTouchPollingMode">false</bool>
 
+    <!-- Whether to show peak refresh rate in display settings -->
+    <bool name="config_show_peak_refresh_rate_switch">false</bool>
+
 </resources>

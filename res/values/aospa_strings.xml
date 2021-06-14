@@ -207,4 +207,7 @@
     <!-- SecurityHub -->
     <string name="config_alternative_advanced_security_category_key"></string>
 
+    <!-- Max refresh rate -->
+    <string name="max_refresh_rate_title">Maximum refresh rate</string>
+
 </resources>

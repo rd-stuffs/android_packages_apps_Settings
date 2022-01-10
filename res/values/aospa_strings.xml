@@ -144,4 +144,7 @@
     <!-- Battery light -->
     <string name="battery_light_title">Battery light</string>
 
+    <!-- Floating rotation button -->
+    <string name="enable_floating_rotation_button_title">Floating rotation button</string>
+
 </resources>

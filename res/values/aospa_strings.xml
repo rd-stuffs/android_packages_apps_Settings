@@ -264,4 +264,8 @@
     <string name="network_traffic_autohide_title">Auto-hide</string>
     <string name="network_traffic_autohide_summary">Hide when speed is below 1 KB/s</string>
 
+    <!-- General -->
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="longpress_to_clipboard">Long-press to copy</string>
+
 </resources>

@@ -116,6 +116,13 @@
             android:summary="@string/content_capture_summary"
             settings:controller="com.android.settings.privacy.EnableContentCaptureWithServiceSettingsPreferenceController"/>
 
+        <!-- Ignore secure window feature  -->
+        <co.aospa.framework.preference.SecureSettingSwitchPreference
+            android:key="window_ignore_secure"
+            android:title="@string/ignore_window_secure_title"
+            android:summary="@string/ignore_window_secure_summary"
+            android:defaultValue="false"/>
+
         <Preference
             android:key="cellular_security_settings_privacy"
             android:title="@string/cellular_security_title"

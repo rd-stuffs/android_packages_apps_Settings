@@ -115,10 +115,17 @@
         android:title="@string/special_access"
         android:order="20"/>
 
+    <Preference
+        android:key="high_power_apps"
+        android:title="@string/high_power_apps"
+        android:order="21">
+        <intent android:action="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
+    </Preference>
+
     <PreferenceCategory
         android:key="advanced_category"
         android:title="@string/advanced_apps"
-        android:order="21"
+        android:order="22"
         settings:searchable="false">
 
         <Preference

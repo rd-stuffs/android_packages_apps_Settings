@@ -129,4 +129,8 @@
     <!-- Display settings screen, increased touch polling rate settings summary -->
     <string name="touch_polling_summary">Increase touchscreen polling rate to decrease latency</string>
 
+    <!-- Game Space -->
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
+
 </resources>

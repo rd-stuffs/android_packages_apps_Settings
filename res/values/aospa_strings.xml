@@ -217,4 +217,7 @@
     <string name="enable_blurs_on_windows_title">Blurs</string>
     <string name="enable_blurs_on_windows_summary">Blur some UI elements</string>
 
+    <!-- Advanced sound settings -->
+    <string name="sound_settings_advanced_title">Additional sounds</string>
+
 </resources>

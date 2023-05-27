@@ -109,13 +109,6 @@
             settings:searchable="false"
             settings:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController" />
 
-        <com.android.settingslib.PrimarySwitchPreference
-            android:key="ambient_display_pick_up"
-            android:title="@string/ambient_display_pickup_title"
-            android:fragment="com.android.settings.gestures.PickupGestureSettings"
-            settings:searchable="false"
-            settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" />
-
         <Preference
             android:key="gesture_screen_off_udfps_input_summary"
             android:title="@string/ambient_display_screen_off_udfps_title"
@@ -136,6 +129,13 @@
             android:title="@string/doze_title"
             android:summary="@string/doze_summary"
             android:defaultValue="true" />
+
+        <com.android.settingslib.PrimarySwitchPreference
+            android:key="ambient_display_pick_up"
+            android:title="@string/ambient_display_pickup_title"
+            android:fragment="com.android.settings.gestures.PickupGestureSettings"
+            settings:searchable="false"
+            settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" />
 
     </PreferenceCategory>
 

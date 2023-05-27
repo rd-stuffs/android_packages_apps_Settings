@@ -119,7 +119,7 @@
         <!-- Actually controls doze enablement -->
         <SwitchPreference
             android:key="ambient_display_notification"
-            android:title="@string/doze_enabled_title"
+            android:title="@string/doze"
             android:summary="@string/doze_enabled_summary"
             settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />
 

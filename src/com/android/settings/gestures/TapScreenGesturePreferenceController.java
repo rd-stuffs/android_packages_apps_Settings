@@ -79,14 +79,15 @@ public class TapScreenGesturePreferenceController extends TogglePreferenceContro
     public void updateState(Preference preference) {
         super.updateState(preference);
         final ContentResolver resolver = mContext.getContentResolver();
-        final boolean enabled =
-                Settings.Secure.getInt(resolver, SECURE_KEY, 1) == 1;
+        final boolean enabled = Settings.Secure.getInt(resolver, SECURE_KEY, 1) == 1;
         String summary;
         if (enabled) {
-            summary = mContext.getString(R.string.gesture_setting_on) + " ("
-                    + (Settings.Secure.getInt(resolver, AMBIENT_SECURE_KEY, 0) == 1
-                    ? mContext.getString(R.string.gesture_wake_ambient)
-                    : mContext.getString(R.string.gesture_wake)) + ")";
+            if (Settings.Secure.getInt(resolver, AMBIENT_SECURE_KEY, 0) == 1) {
+                summary = mContext.getString(R.string.gesture_setting_on) + " (" +
+                        mContext.getString(R.string.ambient_display_screen_title) + ")";
+            } else {
+                summary = mContext.getString(R.string.gesture_setting_on);
+            }
         } else {
             summary = mContext.getString(R.string.gesture_setting_off);
         }

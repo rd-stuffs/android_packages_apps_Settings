@@ -193,4 +193,8 @@
     <!-- Separate ringtone/notification volume -->
     <string name="volume_separate_notification_title">Separate ring and notification volume</string>
 
+    <!-- Hide developer status -->
+    <string name="hide_developer_status_title">Hide developer status</string>
+    <string name="hide_developer_status_summary">Hide developer status from apps</string>
+
 </resources>

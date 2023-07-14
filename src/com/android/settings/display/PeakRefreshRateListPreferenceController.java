@@ -101,7 +101,7 @@ public class PeakRefreshRateListPreferenceController extends BasePreferenceContr
 
     @Override
     public int getAvailabilityStatus() {
-        if (mContext.getResources().getBoolean(R.bool.config_show_peak_refresh_rate_switch)) {
+        if (mContext.getResources().getBoolean(R.bool.config_show_refresh_rate_controls)) {
             return AVAILABLE;
         } else {
             return UNSUPPORTED_ON_DEVICE;

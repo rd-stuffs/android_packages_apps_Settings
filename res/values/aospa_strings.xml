@@ -23,10 +23,8 @@
     <string name="three_finger_gesture">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
 
-    <!-- Max refresh rate -->
-    <string name="max_refresh_rate_title">Peak refresh rate</string>
-
-    <!-- Min refresh rate -->
+    <!-- Max/min refresh rate -->
+    <string name="max_refresh_rate_title">Maximum refresh rate</string>
     <string name="min_refresh_rate_title">Minimum refresh rate</string>
 
 </resources>

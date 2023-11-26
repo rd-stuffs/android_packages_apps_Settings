@@ -14226,6 +14226,8 @@
     <string name="category_name_others">Others</string>
     <!-- General category name [CHAR LIMIT=none] -->
     <string name="category_name_general">General</string>
+    <!-- Gestures category name [CHAR LIMIT=none] -->
+    <string name="category_name_gestures">Gestures</string>
     <!-- Title for Dark theme main switch preferences. [CHAR LIMIT=50] -->
     <string name="dark_theme_main_switch_title">Use Dark theme</string>
     <!-- Title for bluetooth main switch. [CHAR LIMIT=50] -->

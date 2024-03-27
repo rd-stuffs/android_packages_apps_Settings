@@ -4,4 +4,7 @@
     <!-- Whether to show max/min refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">false</bool>
 
+    <!-- Show battery cycle count -->
+    <bool name="config_showBatteryCycleCount" translatable="false">true</bool>
+
 </resources>

@@ -37,7 +37,7 @@
 
     <co.aospa.framework.preference.SecureSettingSwitchPreference
         android:key="doze_tap_gesture_ambient"
-        android:title="@string/doze_gesture_ambient_title"
+        android:title="@string/ambient_display_screen_title"
         android:summary="@string/doze_gesture_ambient_summary"
         android:defaultValue="true" />
 

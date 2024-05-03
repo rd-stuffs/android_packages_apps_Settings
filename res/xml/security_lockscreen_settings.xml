@@ -93,6 +93,26 @@
         settings:controller="com.android.settings.display.AmbientDisplayWhenToShowPreferenceController"
         android:order="1000">
 
+        <Preference
+            android:key="ambient_display_double_tap"
+            android:title="@string/ambient_display_title"
+            android:fragment="com.android.settings.gestures.DoubleTapScreenSettings"
+            settings:searchable="false"
+            settings:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController" />
+
+        <Preference
+            android:key="gesture_screen_off_udfps_input_summary"
+            android:title="@string/ambient_display_screen_off_udfps_title"
+            android:fragment="com.android.settings.gestures.ScreenOffUdfpsSettings"
+            settings:searchable="false"
+            settings:controller="com.android.settings.gestures.ScreenOffUdfpsPreferenceController" />
+
+        <Preference
+            android:key="pulse_ambient_light_settings"
+            android:title="@string/pulse_ambient_light_title"
+            android:summary="@string/pulse_ambient_light_summary"
+            android:fragment="com.android.settings.display.PulseAmbientLightSettings" />
+
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="ambient_display_always_on"
             android:title="@string/doze_always_on_title"
@@ -113,12 +133,11 @@
             settings:searchable="false"
             settings:controller="com.android.settings.gestures.TapScreenGesturePreferenceController" />
 
-        <Preference
-            android:key="ambient_display_double_tap"
-            android:title="@string/ambient_display_title"
-            android:fragment="com.android.settings.gestures.DoubleTapScreenSettings"
-            settings:searchable="false"
-            settings:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController" />
+        <SwitchPreference
+            android:key="ambient_display_notification"
+            android:title="@string/doze_title"
+            android:summary="@string/doze_summary"
+            settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />
 
         <com.android.settingslib.PrimarySwitchPreference
             android:key="ambient_display_pick_up"
@@ -126,26 +145,6 @@
             android:fragment="com.android.settings.gestures.PickupGestureSettings"
             settings:searchable="false"
             settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" />
-
-        <Preference
-            android:key="gesture_screen_off_udfps_input_summary"
-            android:title="@string/ambient_display_screen_off_udfps_title"
-            android:fragment="com.android.settings.gestures.ScreenOffUdfpsSettings"
-            settings:searchable="false"
-            settings:controller="com.android.settings.gestures.ScreenOffUdfpsPreferenceController" />
-
-        <!-- Horizon Light Settings -->
-        <Preference
-            android:key="pulse_ambient_light_settings"
-            android:title="@string/pulse_ambient_light_title"
-            android:summary="@string/pulse_ambient_light_summary"
-            android:fragment="com.android.settings.display.PulseAmbientLightSettings" />
-
-        <SwitchPreference
-            android:key="ambient_display_notification"
-            android:title="@string/doze_title"
-            android:summary="@string/doze_summary"
-            settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />
 
     </PreferenceCategory>
 

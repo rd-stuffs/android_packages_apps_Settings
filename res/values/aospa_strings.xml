@@ -104,11 +104,8 @@
 
     <string name="reset">Reset</string>
 
-    <!-- Ambient wake toggles -->
-    <string name="doze_gesture_ambient_title">Show Ambient</string>
-    <string name="doze_gesture_ambient_summary">Show Ambient Display instead of fully waking the screen up</string>
-    <string name="gesture_wake_ambient">Show Ambient</string>
-    <string name="gesture_wake">Fully wake</string>
+    <!-- Doze -->
+    <string name="doze_gesture_ambient_summary">Show notifications, time and info instead of fully waking the screen up</string>
 
     <!-- Display settings screen, color balance category title [CHAR LIMIT=30] -->
     <string name="color_mode_balance_category">Color balance</string>

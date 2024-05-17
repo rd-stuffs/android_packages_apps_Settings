@@ -7,6 +7,9 @@
     <!-- Show battery cycle count -->
     <bool name="config_showBatteryCycleCount" translatable="false">true</bool>
 
+    <!-- Show battery maximum capacity -->
+    <bool name="config_showBatteryMaximumCapacity" translatable="false">true</bool>
+
     <!-- Whether to show min/max refresh rate in display settings -->
     <bool name="config_show_refresh_rate_controls">false</bool>
 

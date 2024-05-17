@@ -85,6 +85,13 @@
             settings:keywords="@string/keywords_model_and_hardware"
             settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
 
+        <Preference
+            android:key="battery_info"
+            android:order="11"
+            android:title="@string/battery_info"
+            android:fragment="com.android.settings.deviceinfo.batteryinfo.BatteryInfoFragment"
+            settings:keywords="@string/keywords_battery_info"/>
+
         <!-- EID -->
         <com.android.settings.network.telephony.TelephonyPreferenceDialog
             android:key="eid_info"

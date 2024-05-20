@@ -36,11 +36,18 @@
         settings:controller="com.android.settings.connecteddevice.NfcAndPaymentFragmentController"/>
 
     <Preference
+        android:fragment="com.android.settings.connecteddevice.usb.UsbDefaultFragment"
+        android:key="default_usb_configuration"
+        android:title="@string/usb_pref"
+        android:summary="@string/usb_default_label"
+        android:order="-6"/>
+
+    <Preference
         android:fragment="com.android.settings.wfd.WifiDisplaySettings"
         android:key="wifi_display_settings"
         android:title="@string/wifi_display_settings_title"
         android:icon="@drawable/ic_cast_24dp"
-        android:order="-6"
+        android:order="-5"
         settings:controller="com.android.settings.wfd.WifiDisplayPreferenceController"
         settings:keywords="@string/keywords_wifi_display_settings"/>
 
@@ -50,7 +57,7 @@
         android:title="@string/android_beam_settings_title"
         settings:controller="com.android.settings.nfc.AndroidBeamPreferenceController"
         android:icon="@drawable/ic_android"
-        android:order="-5"/>
+        android:order="-4"/>
 
     <com.android.settingslib.RestrictedPreference
         android:fragment="com.microsoft.appmanager"
@@ -58,7 +65,7 @@
         android:title="@string/link_to_windows_settings_title"
         settings:controller="com.android.settings.connecteddevice.LinkToWindowsActivityController"
         android:icon="@drawable/ic_link_to_windows"
-        android:order="-4"/>
+        android:order="-3"/>
 
     <com.android.settingslib.RestrictedPreference
         android:key="connected_device_printing"
@@ -66,7 +73,7 @@
         android:summary="@string/summary_placeholder"
         android:icon="@*android:drawable/ic_settings_print"
         android:fragment="com.android.settings.print.PrintSettingsFragment"
-        android:order="-3"/>
+        android:order="-2"/>
 
     <SwitchPreference
         android:key="uwb_settings"

@@ -35,7 +35,8 @@ public class BatteryDesignCapacityPreferenceController extends BasePreferenceCon
 
     @Override
     public int getAvailabilityStatus() {
-        return AVAILABLE;
+        return mContext.getResources().getBoolean(R.bool.config_showBatteryDesignCapacity)
+                ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override

@@ -43,10 +43,7 @@ public class ChargingBatteryLightPreferenceController extends TogglePreferenceCo
 
     @Override
     public boolean isChecked() {
-        boolean enabledByDefault = mContext.getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveBatteryLed);
-        return Settings.Global.getInt(mContext.getContentResolver(), CHARGING_BATTERY_LIGHT_ENABLED,
-                enabledByDefault ? 1 : 0) == 1;
+        return Settings.Global.getInt(mContext.getContentResolver(), CHARGING_BATTERY_LIGHT_ENABLED, 1) == 1;
     }
 
     @Override

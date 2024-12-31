@@ -27,6 +27,8 @@ public class BuildDatePreferenceController extends BasePreferenceController {
     private static final String TAG = "BuildDatePreferenceController";
 
     private static final String KEY_BUILD_DATE_PROP = "ro.build.date";
+    private static final String KEY_BUILD_VARIANT_PROP = "ro.aospa.build.variant";
+    private static final String KEY_BUILD_VARIANT_DEFAULT = "unofficial";
 
     public BuildDatePreferenceController(Context context, String key) {
         super(context, key);
@@ -34,6 +36,11 @@ public class BuildDatePreferenceController extends BasePreferenceController {
 
     @Override
     public int getAvailabilityStatus() {
+        String buildVariant = SystemProperties.get(KEY_BUILD_VARIANT_PROP, KEY_BUILD_VARIANT_DEFAULT);
+        boolean isProduction = !KEY_BUILD_VARIANT_DEFAULT.equals(buildVariant);
+        if (isProduction) {
+            return UNSUPPORTED_ON_DEVICE;
+        }
         return AVAILABLE;
     }
 
